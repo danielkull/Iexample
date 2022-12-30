@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Merriweather", serif;
+}
+
+.header {
+  padding: 20px;
+  text-align: center;
+  background-color: aquamarine;
+}
+
+.doc-title {
+  padding: 10px;
+}
+
+.main {
+  padding: 10px 40px;
+  max-width: 800px;
+  margin: 0 auto;
+}
