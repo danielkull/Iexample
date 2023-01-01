@@ -1,3 +1,5 @@
+/*---------------------------------------------------------*/
+/* General Stylings */
 * {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
@@ -13,6 +15,10 @@ h3 {
   font-family: "Merriweather", serif;
 }
 
+/*---------------------------------------------------------*/
+/* Specific Stylings */
+
+/* .Classes Stylings */
 .header {
   padding: 20px;
   text-align: center;
@@ -20,11 +26,49 @@ h3 {
 }
 
 .doc-title {
+  /*header*/
   padding: 10px;
+  text-shadow: -2px 2px 5px; /*Experimental: Creats a shadow for the title*/
 }
 
 .main {
   padding: 10px 40px;
   max-width: 800px;
   margin: 0 auto;
+}
+
+.nav-a {
+  /*Navbar Links*/
+  color: hwb(246 34% 8%);
+  font-size: medium;
+  margin: 10px;
+  padding: 8px;
+}
+
+/*Other Stylings*/
+
+article + article {
+  /*Every article, except the first*/
+  border-top: rgb(82, 198, 206) solid 2px;
+  padding-top: 20px;
+}
+
+/*---------------------------------------------------------*/
+/* Pseudo Class Stylings */
+
+.nav-a:hover {
+  color: rgb(209, 27, 185);
+  background-color: rgb(66, 248, 233);
+}
+
+.nav-a:active {
+  color: rgb(4, 0, 255);
+}
+
+.contact-a:hover {
+  color: rgb(209, 27, 185);
+}
+
+.contact-a:active {
+  color: black;
 }
