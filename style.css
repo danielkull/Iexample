@@ -5,6 +5,11 @@
   font-family: "Montserrat", sans-serif;
 }
 
+*::selection {
+  background-color: rgb(53, 53, 53);
+  color: beige;
+}
+
 body {
   margin: 0;
 }
@@ -43,6 +48,10 @@ h3 {
   font-size: medium;
   margin: 10px;
   padding: 8px;
+}
+
+.profession::after {
+  content: "🔬";
 }
 
 /*Other Stylings*/
