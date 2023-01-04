@@ -2,10 +2,14 @@
 /* General Stylings */
 * {
   box-sizing: border-box;
+}
+
+html {
   font-family: "Montserrat", sans-serif;
 }
 
 *::selection {
+  /*Active color contrast, if the user selects content*/
   background-color: rgb(53, 53, 53);
   color: beige;
 }
