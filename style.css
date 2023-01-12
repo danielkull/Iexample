@@ -58,6 +58,11 @@ h3 {
   content: "🔬";
 }
 
+.exp-header {
+  display: inline;
+  margin-right: 10px;
+}
+
 /*Other Stylings*/
 
 article + article {
