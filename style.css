@@ -24,6 +24,10 @@ h3 {
   font-family: "Merriweather", serif;
 }
 
+article {
+  padding: 0 35px;
+}
+
 /*---------------------------------------------------------*/
 /* Specific Stylings */
 
@@ -61,6 +65,22 @@ h3 {
 .exp-header {
   display: inline;
   margin-right: 10px;
+}
+
+.heading {
+  position: relative;
+  right: 20px;
+}
+
+.hire-me-badge {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background-color: rgb(82, 112, 103);
+  border-radius: 10%;
+  color: aliceblue;
+  padding: 10px 5px;
+  margin: 15px;
 }
 
 /*Other Stylings*/
