@@ -6,7 +6,7 @@
 
 html {
   font-family: "Montserrat", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 main p {
@@ -125,4 +125,35 @@ article + article {
 
 .contact-a:active {
   color: black;
+}
+
+/* Breakpoints */
+/* ------------------------------------------------------------ */
+/* Medium breakpoint */
+@media screen and (min-width: 786px) {
+  html {
+    font-size: 20px;
+  }
+  article + article {
+    margin-top: 2rem;
+  }
+}
+
+/* Large breakpoint */
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 22px;
+  }
+  .hire-me-badge {
+    position: fixed;
+  }
+}
+
+@media print {
+  .hire-me-badge {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
 }
