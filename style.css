@@ -49,7 +49,7 @@ article {
 }
 
 .doc-title {
-  /*header*/
+  /*Main header*/
   padding: 0.5rem;
   text-shadow: -0.1rem 0.1rem 0.25rem; /*Experimental: Creats a shadow for the title*/
   font-size: 1em;
@@ -69,18 +69,30 @@ article {
   margin: 0 auto;
 }
 
+.navigation {
+  display: flex;
+  flex-direction: column;
+}
+
 .nav-a {
   /*Navbar Links*/
   color: hwb(246 34% 8%);
   font-size: medium;
-  margin: 0.5rem;
+  margin: 0.1rem;
   padding: 0.4rem;
 }
 
 .exp-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.exp-heading,
+.exp-paragraph {
   display: inline;
   margin-right: 0.5rem;
   font-size: 1rem;
+  margin: 0.3rem 0;
 }
 
 .heading {
@@ -129,13 +141,25 @@ article + article {
 
 /* Breakpoints */
 /* ------------------------------------------------------------ */
+
 /* Medium breakpoint */
 @media screen and (min-width: 786px) {
   html {
     font-size: 20px;
   }
+
   article + article {
     margin-top: 2rem;
+  }
+
+  .navigation {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .exp-header {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -144,8 +168,14 @@ article + article {
   html {
     font-size: 22px;
   }
+
   .hire-me-badge {
     position: fixed;
+  }
+
+  .navigation {
+    flex-direction: row;
+    justify-content: center;
   }
 }
 
@@ -153,6 +183,7 @@ article + article {
   .hire-me-badge {
     display: none;
   }
+
   nav {
     display: none;
   }
