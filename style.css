@@ -128,6 +128,8 @@ article {
   font-size: medium;
   margin: 0.1rem;
   padding: 0.4rem;
+  border-radius: 15%;
+  transition: background-color 300ms ease-in;
 }
 
 .exp-header {
@@ -188,6 +190,15 @@ article + article {
   color: var(--link-hover, #d11bb9);
   background-color: var(--link-hover-bg, #797e7d33);
   border-radius: 15%;
+  transition: background-color 300ms ease-in;
+}
+
+.nav-a:focus {
+  color: var(--link-hover, #d11bb9);
+  background-color: var(--link-hover-bg, #797e7d33);
+  border: 1px dashed goldenrod;
+  border-radius: 15%;
+  transition: background-color 300ms ease-in-out;
 }
 
 .nav-a:active {
