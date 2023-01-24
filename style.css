@@ -159,6 +159,7 @@ article {
   color: var(--hire-me-badge-color, aliceblue);
   padding: 0.5rem 0.25rem;
   margin: 0.75rem;
+  transition: transform 300ms ease-in-out;
 }
 
 /*Other Stylings*/
@@ -213,6 +214,14 @@ article + article {
 .contact-a:active,
 .footer > a:active {
   color: var(--link-active-dark, #000000);
+}
+
+.header:hover .hire-me-badge {
+  transform: scale(1.2);
+}
+
+.header:focus-within .hire-me-badge {
+  transform: scale(1.2);
 }
 
 /* Breakpoints */
