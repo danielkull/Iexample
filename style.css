@@ -237,6 +237,11 @@ article + article {
     margin-top: 2rem;
   }
 
+  .main-article {
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+  }
+
   .navigation {
     flex-direction: row;
     justify-content: center;
